@@ -1,101 +1,113 @@
 ﻿//zad1
-//int a = int.Parse(Console.ReadLine());
-//int b = int.Parse(Console.ReadLine());
-//if ((a + b) % 2 == 0)
+//Console.WriteLine("Pn\tBt\tSr\tCzw\tPt\tSob\tNd\t");
+//Console.Write("\t");
+//int j = 1;
+//for (int i = 1; i < 31; i++)
 //{
-//Console.WriteLine("liczba jest parzysta");
+//    Console.Write(i + "\t");
+//    j++;
+//    if (j == 7)
+//    {
+//        Console.WriteLine();
+//        j = 0;
+//    }
+
 //}
-//else
-//{
-//Console.WriteLine("Liczba nie jest parzysta");
-//}
+
 //zad2
-//int c = int.Parse(Console.ReadLine());
-//int d = int.Parse(Console.ReadLine());
-//if ((c + d) / 2 < Math.Sqrt(a * b))
+//int k2 = int.Parse(Console.ReadLine());
+//for (int i = 1; i < k2 * 2; i++)
 //{
-//    Console.WriteLine("Tak");
+//    if (i % 2 == 1)
+//    {
+//        Console.WriteLine(i * i);
+//    }
 //}
-//else
-//{
-//    Console.WriteLine("Nie");
-//}
+
 //zad3
-//int a = int.Parse(Console.ReadLine());
-//int b = int.Parse(Console.ReadLine());  
-//int c = int.Parse(Console.ReadLine());
-//Console.WriteLine((a + b + c)/3);
-//if (a == b || b == c || a == c)
+//for (int i = 1; i < 10001; i++)
 //{
-//    if (a == c)
+//    if (i % 379 == 0)
 //    {
-//        Console.WriteLine("Tak a = c");
-//    }
-//    if (b == c)
-//    {
-//        Console.WriteLine("Tak a = b");
-//    }
-//    if (a == b)
-//    {
-//        Console.WriteLine("a = b");
+//        Console.WriteLine(i);
 //    }
 //}
-//else
-//{
-//    Console.WriteLine("Nie")
-//}
+
 //zad4
-//int a = int.Parse(Console.ReadLine());
-//int b = int.Parse(Console.ReadLine());
-//int c = int.Parse(Console.ReadLine());  
-//int d = int.Parse(Console.ReadLine());
-//if (a<b && a>c && a<d)
+//for (int i = 100; i < 1000; i++)
 //{
-//    Console.WriteLine("a jest najmniejsze");
+//    if (i % 5 == 0 || i % 6 == 0 || i % 11 == 0)
+//    {
+//        Console.WriteLine(i);
+//    }
 //}
-//else if (b<c && b<d && b<a)
-//{
-//    Console.WriteLine("b jest najmniejsze");
-//}
-//else if (c<d && c<a && c<b)
-//{
-//    Console.WriteLine("c jest najmniejsze");
-//}
-//else if (d<c && c<a && c<b)
-//{
-//    Console.WriteLine("d jest najmniejsze");
-//}
+
 //zad5
-//int a = int.Parse(Console.ReadLine());
-//int b = int.Parse(Console.ReadLine());
-//int c = int.Parse(Console.ReadLine());
-//if (a - b < c < a + b && b - c < a <b + c && a - c < b < a + c)
+//int m = int.Parse(Console.ReadLine());
+//int n = 0;
+//int S = 0;
+//for (int i = 1; i <= m; i++)
 //{
-//    Console.WriteLine("Tak");
+//    n = int.Parse(Console.ReadLine());
+//    S += n;
 //}
-//else
-//{
-//    Console.WriteLine("Nie");
-//}
+//Console.WriteLine(S);   
+
 //zad6
-//int a = int.Parse(Console.ReadLine());
-//int b = int.Parse(Console.ReadLine());
-//int c = int.Parse(Console.ReadLine());
-//if (a + b > c && b + c > a && c + a > b)
+//int n = int.Parse(Console.ReadLine());
+//int m = 0;
+//for (int i = 2; i <= n*2; i+=2)
 //{
-//    if (Math.Pow(a, 2) + Math.Pow(b, 2) == Math.Pow(c, 2) || Math.Pow(b, 2) + Math.Pow(c, 2) == Math.Pow(a, 2) || Math.Pow(a, 2) + Math.Pow(c, 2) == Math.Pow(b, 2))
-//    {
-//        Console.WriteLine("prosto-");
-//    }    
-//    if (Math.Pow(a, 2) + Math.Pow(b, 2) < Math.Pow(c, 2) || Math.Pow(b, 2) + Math.Pow(c, 2) < Math.Pow(a, 2) || Math.Pow(a, 2) + Math.Pow(c, 2) < Math.Pow(b, 2))
-//    {
-//        Console.WriteLine("rozwarto-");
-//    }
-//    if (Math.Pow(a, 2) + Math.Pow(b, 2) > Math.Pow(c, 2) || Math.Pow(b, 2) + Math.Pow(c, 2) > Math.Pow(a, 2) || Math.Pow(a, 2) + Math.Pow(c, 2) > Math.Pow(b, 2))
-//    {
-//        Console.WriteLine("ostro-");
-//    }
-
-
-
+// m+=i;
 //}
+//Console.WriteLine(m);
+//
+//zad7
+//int n = int.Parse(Console.ReadLine());
+//int d = 0;
+//for (int i = 11; i <= n * 2 + 11; i += 2)
+//{
+//    d += i;  
+//}
+//Console.WriteLine(d);
+
+//zad8
+
+//int a = int.Parse(Console.ReadLine());
+//double L = Convert.ToDouble(Console.ReadLine());
+//double b = a;
+//for (int i = 0; i < L * 12; i++)
+//{
+//    b = a * 0.06 * 1/12;
+//    b+=a;
+//}
+//System.Console.WriteLine(Math.Round(b,2));
+
+//zad9
+
+//int L = int.Parse(Console.ReadLine());
+//int k = 21;
+//int s = 0;
+//for (int i = 0; i < L; i++)
+//{
+//    for (int j = 0; j < i; j += k)
+//    {
+//        s += k;
+//        k += 100;
+//    }
+//}
+//System.Console.WriteLine(s);
+
+//zad10
+
+for (double i = 1; i <= 1000; i++)
+{
+    if (i % 10 == Math.Sqrt(i))
+    {
+        System.Console.WriteLine(i);
+    }
+    else if(i % 100 == Math.Sqrt(i))
+    {
+        System.Console.WriteLine(i);
+    }
+}
